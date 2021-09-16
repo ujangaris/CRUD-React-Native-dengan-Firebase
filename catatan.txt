@@ -1,0 +1,10 @@
+installasi :
+ 1. https://reactnative.dev/docs/environment-setup
+
+ 2. buka android studio
+
+ 3. - terminal 1 :
+        - npm start
+   - terminal 2 :
+        - npx react-native run-android
+    
