@@ -7,4 +7,9 @@ installasi :
         - npm start
    - terminal 2 :
         - npx react-native run-android
+
+/*Tutorial React Native Dasar : 3. Mengenal Component  */
+1. jika halaman utamanya / compleks bisa menggunakan class component (rnc)
     
+2. jika simple(button,form, dll..) gunakan arrow function component (rnfe)
+3. untuk menggunakan style menggunakan (rncs)
