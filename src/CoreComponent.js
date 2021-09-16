@@ -1,5 +1,6 @@
 import React from 'react';
 import { View, Text, Image, ScrollView, TextInput } from 'react-native';
+import Cat from './assets/cat.png'
 
 const CoreComponent = () => {
   return (
@@ -8,9 +9,7 @@ const CoreComponent = () => {
       <View>
         <Text>Some more text</Text>
         <Image
-          source={{
-            uri: 'https://reactnative.dev/docs/assets/p_cat2.png',
-          }}
+          source={Cat}
           style={{ width: 200, height: 200 }}
         />
       </View>
