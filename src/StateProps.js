@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Text, StyleSheet, View} from 'react-native';
+import {Text, StyleSheet, View, TouchableOpacity} from 'react-native';
 
 export default class StateProps extends Component {
   //rcons
@@ -12,7 +12,7 @@ export default class StateProps extends Component {
   }
 
   render() {
-      const { sekolah } = this.state
+    const {sekolah} = this.state;
     return (
       <View style={styles.container}>
         <Text style={styles.title}> Belajar State dan Props</Text>
@@ -20,6 +20,9 @@ export default class StateProps extends Component {
         {/* Isi */}
         <View style={styles.isi}>
           <Text>Ini adalah State : {sekolah}</Text>
+          <TouchableOpacity style={styles.tombol}>
+            <Text style={{textAlign: 'center'}}>Ganti State</Text>
+          </TouchableOpacity>
         </View>
       </View>
     );
@@ -39,5 +42,11 @@ const styles = StyleSheet.create({
   },
   isi: {
     marginTop: 30,
+  },
+  tombol: {
+    backgroundColor: 'skyblue',
+    padding: 10,
+    borderRadius: 10,
+    marginTop: 10,
   },
 });
