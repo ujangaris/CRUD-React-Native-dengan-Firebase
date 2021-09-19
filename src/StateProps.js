@@ -11,6 +11,12 @@ export default class StateProps extends Component {
     };
   }
 
+  gantiState() {
+    this.setState({
+      sekolah: 'WAHIDEV',
+    });
+  }
+
   render() {
     const {sekolah} = this.state;
     return (
@@ -20,7 +26,9 @@ export default class StateProps extends Component {
         {/* Isi */}
         <View style={styles.isi}>
           <Text>Ini adalah State : {sekolah}</Text>
-          <TouchableOpacity style={styles.tombol}>
+          <TouchableOpacity
+            style={styles.tombol}
+            onPress={() => this.gantiState()}>
             <Text style={{textAlign: 'center'}}>Ganti State</Text>
           </TouchableOpacity>
         </View>
