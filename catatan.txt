@@ -13,3 +13,7 @@ installasi :
     
 2. jika simple(button,form, dll..) gunakan arrow function component (rnfe)
 3. untuk menggunakan style menggunakan (rncs)
+
+/*Tutorial React Native Dasar : 5. Belajar Desain Tampilan dan Flexbox  */
+1. membuat file DesainTampilan .js
+     - rncs
