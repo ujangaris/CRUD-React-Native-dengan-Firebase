@@ -22,6 +22,13 @@ export default class DesainTampilan extends Component {
             <View style={styles.kotakBiru} />
             <View style={styles.kotakHijau} />
           </View>
+
+          <Text>Justify Content</Text>
+          <View style={{flexDirection: 'row', justifyContent: 'space-between'}}>
+            <View style={styles.kotakMerah} />
+            <View style={styles.kotakBiru} />
+            <View style={styles.kotakHijau} />
+          </View>
         </View>
       </View>
     );

@@ -17,3 +17,6 @@ installasi :
 /*Tutorial React Native Dasar : 5. Belajar Desain Tampilan dan Flexbox  */
 1. membuat file DesainTampilan .js
      - rncs
+2. Flexbox 
+     -Justify Content :
+          - 'center | flex-star | flex-end | space-between'
