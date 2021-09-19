@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {Text, StyleSheet, View, TouchableOpacity} from 'react-native';
+import { Operan } from './Operan';
 
 export default class StateProps extends Component {
   //rcons
@@ -26,6 +27,8 @@ export default class StateProps extends Component {
         {/* Isi */}
         <View style={styles.isi}>
           <Text>Ini adalah State : {sekolah}</Text>
+
+          <Operan sekolah={sekolah}/>
           <TouchableOpacity
             style={styles.tombol}
             onPress={() => this.gantiState()}>
