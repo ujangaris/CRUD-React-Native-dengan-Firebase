@@ -15,6 +15,13 @@ export default class DesainTampilan extends Component {
             <View style={styles.kotakBiru} />
             <View style={styles.kotakHijau} />
           </View>
+
+          <Text>Flex Direction Column (Horizontal)</Text>
+          <View>
+            <View style={styles.kotakMerah} />
+            <View style={styles.kotakBiru} />
+            <View style={styles.kotakHijau} />
+          </View>
         </View>
       </View>
     );
