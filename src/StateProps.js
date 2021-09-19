@@ -12,13 +12,14 @@ export default class StateProps extends Component {
   }
 
   render() {
+      const { sekolah } = this.state
     return (
       <View style={styles.container}>
         <Text style={styles.title}> Belajar State dan Props</Text>
         <View style={styles.garis} />
         {/* Isi */}
         <View style={styles.isi}>
-          <Text>Ini adalah State : {this.state.sekolah}</Text>
+          <Text>Ini adalah State : {sekolah}</Text>
         </View>
       </View>
     );
