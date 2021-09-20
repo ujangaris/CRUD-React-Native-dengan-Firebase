@@ -5,6 +5,7 @@ import {
   View,
   TouchableOpacity,
   TextInput,
+  Alert,
 } from 'react-native';
 
 export default class ContohForm extends Component {
@@ -21,9 +22,13 @@ export default class ContohForm extends Component {
 
   //logic button login
   login = () => {
-    this.setState({
-      isLogin: true,
-    });
+    if (!this.state.username && !this.state.password) {
+      Alert.alert('Error', 'Username dan Password harus di isi!');
+    } else {
+      this.setState({
+        isLogin: true,
+      });
+    }
   };
 
   render() {
