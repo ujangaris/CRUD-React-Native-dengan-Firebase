@@ -15,11 +15,19 @@ export default class ContohForm extends Component {
     this.state = {
       username: '',
       password: '',
+      isLogin: false,
     };
   }
 
+  //logic button login
+  login = () => {
+    this.setState({
+      isLogin: true,
+    });
+  };
+
   render() {
-    const {username, password} = this.state;
+    const {username, password, isLogin} = this.state;
     return (
       <View style={styles.container}>
         <Text style={styles.title}> Belajar Membuat Form</Text>
@@ -47,9 +55,15 @@ export default class ContohForm extends Component {
             />
           </View>
 
-          <TouchableOpacity style={styles.button}>
+          <TouchableOpacity style={styles.button} onPress={() => this.login()}>
             <Text style={styles.textButton}>LOGIN</Text>
           </TouchableOpacity>
+
+          {isLogin && (
+            <Text style={{marginTop: 20}}>
+              Selamat Berhasil Login : {username}
+            </Text>
+          )}
         </View>
       </View>
     );
