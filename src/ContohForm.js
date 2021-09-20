@@ -26,7 +26,7 @@ export default class ContohForm extends Component {
         <View style={styles.garis} />
         {/* Isi */}
         <View style={styles.isi}>
-          <View>
+          <View style={styles.wrapperInput}>
             <Text>Username : </Text>
             <TextInput
               style={styles.TextInput}
@@ -35,6 +35,21 @@ export default class ContohForm extends Component {
               onChangeText={username => this.setState({username})}
             />
           </View>
+
+          <View style={styles.wrapperInput}>
+            <Text>Password : </Text>
+            <TextInput
+              style={styles.TextInput}
+              placeholder="Masukan Password"
+              value={password}
+              onChangeText={password => this.setState({password})}
+              secureTextEntry={true}
+            />
+          </View>
+
+          <TouchableOpacity style={styles.button}>
+            <Text style={styles.textButton}>LOGIN</Text>
+          </TouchableOpacity>
         </View>
       </View>
     );
@@ -61,5 +76,18 @@ const styles = StyleSheet.create({
     borderColor: 'grey',
     borderRadius: 5,
     height: 40,
+  },
+  wrapperInput: {
+    marginTop: 20,
+  },
+  button: {
+    marginTop: 20,
+    backgroundColor: 'skyblue',
+    padding: 10,
+    borderRadius: 5,
+  },
+  textButton: {
+    textAlign: 'center',
+    fontWeight: 'bold',
   },
 });
